@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding Flex</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .container div{
+            border: 2px solid aquamarine;
+            width: 100px;
+            height: 200px;
+            font-size: 3em;
+        }
+        .box-container{
+            display: flex;
+        }
+        .box{
+            border: 2px solid red;
+            width: 100px;
+            height: 200px;
+            font-size: 3em;
+        }
+        .user-container{
+            display: flex;
+            /* justify-content: center; */
+            justify-content: space-around;
+            /* justify-content: space-between; */
+        }
+        .user{
+            border: 2px solid blueviolet;
+            width: 100px;
+            height: 200px;
+            font-size: 3em;
+            background-color: chocolate;
+        }
+        .card-container{
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- To create a serial list you can use a shortcut like div{$}*6 -->
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+    <div class="box-container">
+        <!-- you can use a shortcut to create a serial list with same class by using----- div.box{$}*6 -->
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+    </div>
+    <div class="user-container">
+        <!-- You can use a shortcut for same class and serial text by using div.user{user-$}*3 -->
+        <div class="user">user-1</div>
+        <div class="user">user-2</div>
+        <div class="user">user-3</div>
+    </div>
+    <!-- suppose you have too many element for flex and you call their parent to make them flex. But the reason for too many element they cann't hold their actual shape because of space problem. you want to make them flex and also want they hold their actual shape if needed to go through the second or third line. (You can use flex-wrap) -->
+     <div class="card-container">
+        <div class="user">card-1</div>
+        <div class="user">card-2</div>
+        <div class="user">card-3</div>
+        <div class="user">card-4</div>
+        <div class="user">card-5</div>
+        <div class="user">card-6</div>
+        <div class="user">card-7</div>
+        <div class="user">card-8</div>
+        <div class="user">card-9</div>
+        <div class="user">card-10</div>
+        <div class="user">card-11</div>
+        <div class="user">card-12</div>
+        <div class="user">card-13</div>
+        <div class="user">card-14</div>
+        <div class="user">card-15</div>
+        <div class="user">card-16</div>
+     </div>
+</body>
+</html>
