@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        td, th{
+            border: 1px solid turquoise;
+            padding: 10px 20px
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <table>
+            <!-- if we need a table caption we can use a caption tag into the table tag -->
+             <caption>My close friends</caption>
+            <thead>
+                <tr>
+                    <th>No:</th>
+                    <th>FirstName</th>
+                    <th>LastName</th>
+                    <th>Age</th>
+                </tr>
+            </thead>
+            <tbody>
+                <h2>Friends</h2>
+                <tr>
+                    <td>1</td>
+                    <td>Nazmul</td>
+                    <td>Haq</td>
+                    <td>31</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Arjun</td>
+                    <td>Ghosh</td>
+                    <td>36</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Shimul</td>
+                    <td>Mojumder</td>
+                    <td>34</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <!-- if you need a bigger span for a td you can use a colspan attribute -->
+                <td colspan="4">Total friends: 3</td>
+            </tfoot>
+        </table>
+    </main>
+    <section>
+        <h2>Table Info</h2>
+        <ul>
+            <li>table: table tag</li>
+            <li>table header: thead</li>
+            <li>table header-table row-table head: th</li>
+            <li>table body: tbody</li>
+            <li>table footer: tfoot</li>
+            <li>table row: tr</li>
+            <li>table data: td</li>
+        </ul>
+    </section>
+</body>
+</html>
