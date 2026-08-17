@@ -14,9 +14,40 @@
             <h2>Jamaler Mayer Pitha Ghar</h2>
             <form>
                 <label for="name">Your Name</label>
-                <input type="text" name="" id="name">
+                <input type="text" name="" id="name"><br><br>
                 <label for="email">Your Email</label>
                 <input type="email" name="" id="email">
+                <label for="phone">Your Number
+                    <input type="number" name="" id="phone">
+                </label>
+                <!-- if we want a bigger size for the input field then we can use the fieldset and legend elements -->
+                 <fieldset>
+                    <legend>Pitha Info</legend>
+                    <!-- name attribute works only one type selection for at a time. we should maintain the same name for all radio of the same group -->
+                    <label for="chitoy">Chitoy</label>
+                    <input type="radio" name="pitha" id="chitoy">
+                    <label for="patishapta">Patishapta</label>
+                    <input type="radio" name="pitha" id="patishapta">
+                    <label for="puli">Puli</label>
+                    <input type="radio" name="pitha" id="puli">
+                 </fieldset>
+                 <!-- if we need more than one selection at a time, we can use checkbox type attribute -->
+                  <fieldset>
+                    <legend>Vorta Selection</legend>
+                    <input type="checkbox" name="vorta" id="sorisha">
+                    <label for="sorisha">Sorisha Vorta</label>
+                    <input type="checkbox" name="vorta" id="morich">
+                    <label for="morich">Morich Vorta</label>
+                    <input type="checkbox" name="vorta" id="roshun">
+                    <label for="roshun">Roshun Vorta</label>
+                  </fieldset>
+                  <!-- we can set a text area for visitors if they need to write a feedback, we can use textarea into the fieldset tag and use cols and rows attribute to make textarea perfect -->
+                   <fieldset>
+                    <legend>Extra Info</legend>
+                    <textarea cols="30" rows="4" name="" id=""></textarea>
+                   </fieldset>
+                   <input type="submit" value="submit">
+                   <input type="reset" value="clear">
             </form>
         </section>
     </main>
