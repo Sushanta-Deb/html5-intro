@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex center</title>
+    <style>
+        .container{
+            background-color: aqua;
+            display: flex;
+            height: 700px;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            background-color: blueviolet;
+            font-size: 4em;
+            height: 200px;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <!-- suppose you create a parent div with class and in this div you create another div with another class. now you style the 2nd div. The parent div take the space automatically. Now you have only one element in the 2nd div. But you want to make it justify center or something. you can't do it without doing flex. though you have only one element and it is already in line. But you have to do display flex before doing justify flex. if you need to do it vertical center then you should mention the height of the parent div otherwise you will not see any change. After mention the parent div height you can use the align item for vertical center.   -->
+    <div class="container">
+        <div class="box">
+            something
+        </div>
+    </div>
+</body>
+</html>
