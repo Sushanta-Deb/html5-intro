@@ -1,0 +1,40 @@
+body{
+    max-width: 1170px;
+    /* background-color: bisque; */
+    margin: 0 auto;
+}
+.card-section{
+    text-align: center;
+}
+.card-container{
+    display: flex;
+    gap: 70px;
+    flex-wrap: wrap;
+}
+.card{
+    width: 300px;
+    border: 1px solid lightsalmon;
+    text-align: left;
+    border-radius: 5px;
+    padding: 5px 5px;
+    box-shadow: 5px 5px 5px grey;
+}
+.card:hover{
+    background-color: aquamarine;
+}
+.card img{
+    width: 100%;
+    border-radius: 5px;
+}
+.card h3{
+    font-size: 1.25em;
+    font-weight: 800;
+}
+.card button:hover{
+    background-color: brown;
+    border-radius: 2px;
+    border: none;
+    color: bisque;
+    padding: 5px 5px;
+
+}
